@@ -42,12 +42,15 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%); /* shift 50% to align center*/
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+
     backface-visibility: hidden; /* fix sharking when run animation*/
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -99,4 +102,29 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color:#777;
 }
